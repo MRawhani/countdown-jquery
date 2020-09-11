@@ -76,20 +76,20 @@ var Page = (function() {
 				bb.prev();
 				return false;
 			},
-			'swipeup'		: function( event ) {
-				if( $container.data( 'opened' ) ) {
-					return false;
-				}
-				bb.next();
-				return false;
-			},
-			'swipedown'	: function( event ) {
-				if( $container.data( 'opened' ) ) {
-					return false;
-				}
-				bb.prev();
-				return false;
-			}
+			// 'swipedown'		: function( event ) {
+			// 	if( $container.data( 'opened' ) ) {
+			// 		return false;
+			// 	}
+			// 	bb.next();
+			// 	return false;
+			// },
+			// 'swipeup'	: function( event ) {
+			// 	if( $container.data( 'opened' ) ) {
+			// 		return false;
+			// 	}
+			// 	bb.prev();
+			// 	return false;
+			// }
 		} );
 
 		// show table of contents
