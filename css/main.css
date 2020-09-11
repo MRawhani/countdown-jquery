@@ -82,6 +82,15 @@ p {
 					background-size: cover;
 					background-color: #F1FF38;
 }
+.speak {
+    position: relative;
+    background:url(./../images2/yellow_wave.svg)  no-repeat;
+			
+					height: 100vh;
+					background-position: bottom;
+					background-size: cover;
+					background-color: #F1FF38;
+}
 .topic {
     position: relative;
     background:url(./../images2/yellow_wave.svg)  no-repeat;
@@ -162,7 +171,8 @@ p {
 .countdown-rec {
     background-color: #1d1e22;
     padding: 10px;
-    width: 100%
+    width: 100%;
+    margin-top: 1rem;
 }
 
 .countdown-rec img {
@@ -343,7 +353,7 @@ p {
 @media (min-width:57.5em) {
   
     .topics-img {
-        width: 40%
+        width: 45%
     }
 }
 .position-middle {
@@ -357,7 +367,11 @@ p {
 .topics__black {
     position: relative;
     background-color: #1d1e22;
-    color: #f1ff38
+    color: #f1ff38;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
 }
 
 .topics__black:hover h1,
@@ -369,30 +383,34 @@ p {
 .topics__black:hover h6 {
     opacity: 1;
     visibility: visible;
-    transform: translate(-50%, -80%)
+    
+    /* transform: translate(-50%, -50%) */
 }
 
 .topics__black h6 {
     opacity: 0;
     visibility: hidden;
     width: 70%;
+    /* position: absolute;
+    top: 0; */
+    position: absolute;
     font-size: 1rem;
-    top: 50%;
-    transform: translate(-50%, 30px)
+   
+   
 }
 
 .topics__black h6,
 .topics__black img {
-    position: absolute;
+   
     transition: all .3s;
-    left: 50%
+   
 }
 
 .topics__black img {
     width: 120px;
     font-size: 40px;
     top: 10px;
-    transform: translateX(-50%)
+   
 }
 
 .topics__black img.tall {
@@ -400,12 +418,11 @@ p {
 }
 
 .topics__black h1 {
-    position: absolute;
+   
     font-size: 40px;
-    top: 35%;
+   
     transition: all .3s;
-    left: 50%;
-    transform: translateX(-50%)
+   
 }
 
 .topics__black p {
@@ -415,6 +432,10 @@ p {
 
 .topics__yellow {
     background-color: #f1ff38;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     position: relative;
     color: #1d1e22
 }
@@ -428,38 +449,39 @@ p {
 .topics__yellow:hover h6 {
     opacity: 1;
     visibility: visible;
-    transform: translate(-50%, -80%)
+    /* transform: translate(-50%,-50%); */
+    
 }
 
 .topics__yellow img {
     width: 120px;
-    top: 10px;
-    transform: translateX(-50%)
+   
 }
 
 .topics__yellow h6,
 .topics__yellow img {
-    position: absolute;
+   
     transition: all .3s;
-    left: 50%
+   
 }
 
 .topics__yellow h6 {
+    position: absolute;
     opacity: 0;
     visibility: hidden;
     width: 70%;
     font-size: 1rem;
+    /* position: absolute;
     top: 50%;
-    transform: translate(-50%, 30px)
+    left: 50%; */
+   
 }
 
 .topics__yellow h1 {
     font-size: 40px;
-    position: absolute;
+  
     transition: all .3s;
-    top: 35%;
-    left: 50%;
-    transform: translateX(-50%)
+   
 }
 .white{
     color: #fff;
@@ -691,6 +713,26 @@ p {
     .modal-content {
         width: 80%
     }
+}
+.speak-wrapper img{
+    width: 50%;
+    
+    
+}
+
+@media (min-width:57.5em) {
+    .speak-wrapper img{
+        width: 100%;
+        
+    }
+ 
+}
+@media (min-width:35.5em) {
+ 
+    .speak-wrapper .col-4,.speak-wrapper .col-3{
+        flex-basis: 33.33333%;
+        text-align: center;
+        }
 }
 
 .close {
@@ -2772,7 +2814,7 @@ form {
 
 @media (min-width:37.5em) {
     .title {
-        font-size: 50.78465px
+        font-size: 60.78465px
     }
 }
 
@@ -3284,7 +3326,12 @@ code {
     color: #fff;
     height: 100%
 }
-
+@media (min-height:750px), (min-width:1300) {
+    .App-page {
+        
+        height: 100vh
+    }
+}
 .App-page_red {
     background: #f44336
 }

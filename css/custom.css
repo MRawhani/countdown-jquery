@@ -125,12 +125,27 @@ a:hover {
 	color: #fff;
 	text-shadow: none;
 }
+nav{
+	opacity: .7;
+}
+.bb-custom-wrapper .nav-1 {
+	top: 50%;
 
-.bb-custom-wrapper nav {
-	top: 11.4%;
 	left: 0;
 	position: absolute;
 	z-index: 1000;
+	transform: translateY(-50%);
+}
+.bb-custom-wrapper .nav-2 {
+	top: 50%;
+right: 0;
+position: absolute;
+transform: translateY(-50%);
+
+z-index: 1000;
+left: 100%;
+
+width: 5%;
 }
 
 .bb-custom-wrapper nav span,
@@ -144,7 +159,7 @@ a:hover {
 	font-size: 21px;
 	left: 0;
 	background: #fff;
-	border-radius: 50%;
+	/* border-radius: 50%; */
 	color: #1D1E22;
 	line-height: 40px;
 	text-align: center;
