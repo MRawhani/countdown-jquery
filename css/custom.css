@@ -127,23 +127,26 @@ a:hover {
 }
 
 .bb-custom-wrapper nav {
-	top: 20px;
-	left: 60px;
+	top: 11.4%;
+	left: 0;
 	position: absolute;
 	z-index: 1000;
 }
 
 .bb-custom-wrapper nav span,
 .menu-button {
-	position: absolute;
-	width: 32px;
-	height: 32px;
+	transition: all .3s;
+	/* position: absolute; */
+	display: block;
+	width: 43px;
+	height: 43px;
 	top: 0;
+	font-size: 21px;
 	left: 0;
-	background: #f1103a;
+	background: #fff;
 	border-radius: 50%;
-	color: #fff;
-	line-height: 30px;
+	color: #1D1E22;
+	line-height: 40px;
 	text-align: center;
 	speak: none;
 	font-weight: bold;
@@ -152,7 +155,8 @@ a:hover {
 
 .bb-custom-wrapper nav span:hover,
 .menu-button:hover {
-	background: #000;
+	background: #fff;
+	color: #1D1E22;
 }
 
 .bb-custom-wrapper nav span:last-child {
